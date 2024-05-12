@@ -341,7 +341,7 @@ impl Chain {
             Morden | Ropsten | Rinkeby | Goerli | Kovan | Sepolia | Holesky | Moonbase |
             MoonbeamDev | OptimismKovan | Poa | Sokol | Rsk | EmeraldTestnet | Boba | Base |
             BaseGoerli | BaseSepolia | Blast | BlastSepolia | ZkSync | ZkSyncTestnet |
-            PolygonZkEvm | PolygonZkEvmTestnet | Metis | Linea | LineaTestnet | Mantle |
+            PolygonZkEvm | PolygonZkEvmTestnet | PolygonZkEvmCardona | Metis | Linea | LineaTestnet | Mantle |
             MantleTestnet | Zora | ZoraGoerli | ZoraSepolia => return None,
         };
 
@@ -717,7 +717,7 @@ impl Chain {
 
             Avalanche | AvalancheFuji => "SNOWTRACE_API_KEY",
 
-            Polygon | PolygonMumbai | PolygonZkEvm | PolygonZkEvmTestnet | PolygonAmoy => {
+            Polygon | PolygonMumbai | PolygonZkEvm | PolygonZkEvmTestnet | PolygonZkEvmCardona | PolygonAmoy => {
                 "POLYGONSCAN_API_KEY"
             }
 
