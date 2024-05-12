@@ -110,6 +110,7 @@ pub enum Chain {
     #[strum(serialize = "polygon-zkevm-testnet", serialize = "zkevm-testnet")]
     #[serde(alias = "zkevm_testnet", alias = "polygon_zkevm_testnet")]
     PolygonZkEvmTestnet = 1442,
+    PolygonZkEvmCardona = 2442,
 
     Fantom = 250,
     FantomTestnet = 4002,
@@ -382,6 +383,7 @@ impl Chain {
             MantleTestnet |
             PolygonZkEvm |
             PolygonZkEvmTestnet |
+            PolygonZkEvmCardona |
             Metis |
             Viction |
             Scroll |
@@ -486,6 +488,11 @@ impl Chain {
             PolygonZkEvmTestnet => (
                 "https://api-testnet-zkevm.polygonscan.com/api",
                 "https://testnet-zkevm.polygonscan.com",
+            ),
+
+            PolygonZkEvmCardona => (
+                "https://api-cardona-zkevm.polygonscan.com/api",
+                "https://cardona-zkevm.polygonscan.com/"
             ),
 
             Avalanche => ("https://api.snowtrace.io/api", "https://snowtrace.io"),
